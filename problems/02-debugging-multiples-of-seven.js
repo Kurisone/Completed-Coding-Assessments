@@ -7,22 +7,28 @@ highest. Unfortunately, the code is not working correctly. Help them fix it!
 
 function multiplesOfSeven(num) {
   let arr = [];
-  for (let i = num; i > 0; i--) {
-    if (i % 7 === 1) {
-      arr.push(i);
+  let bug = [];
+  for(let i = 0; i <= num; i++){
+    if(i === 0){
+      bug.push(i)
+    }else if(i === 7){
+      arr.push(i)
     }
-  }
-  return arr;
+    else if(i % 7 === 0){
+      arr.push(i)
+    }
+  
+  }return arr
 }
 
 // Expected return values
-// console.log(multiplesOfSeven(1));
+console.log(multiplesOfSeven(1));
 // //=> []
-// console.log(multiplesOfSeven(7));
+console.log(multiplesOfSeven(7));
 // //=> [ 7 ]
-// console.log(multiplesOfSeven(15));
+console.log(multiplesOfSeven(15));
 // //=> [ 7, 14 ]
-// console.log(multiplesOfSeven(85));
+console.log(multiplesOfSeven(85));
 // //=> [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84]
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
