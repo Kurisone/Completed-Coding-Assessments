@@ -11,9 +11,10 @@ function multiplesOfSeven(num) {
   for(let i = 0; i <= num; i++){
     if(i === 0){
       bug.push(i)
-    }else if(i === 7){
-      arr.push(i)
     }
+    // }else if(i === 7){
+    //   arr.push(i)
+    // }
     else if(i % 7 === 0){
       arr.push(i)
     }
