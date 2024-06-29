@@ -23,13 +23,12 @@ function highestProduct(numsList) {
   // Your code here 
   let max = -Infinity
   let maxIndex = -1
-for(let i = 0; i < numsList.length; i++){
-  let product = getProduct(numsList[i])
-    if(product > max){
-    max = product
+for(let i = 0; i < numsList.length; i++){ 
+  let product = getProduct(numsList[i]) 
+    if(product > max){ 
     maxIndex = i
     }
-  }return maxIndex
+  }return maxIndex 
 } 
 
 
