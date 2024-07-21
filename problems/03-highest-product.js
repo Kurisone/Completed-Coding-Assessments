@@ -27,6 +27,7 @@ for(let i = 0; i < numsList.length; i++){
   let product = getProduct(numsList[i]) 
     if(product > max){ 
     maxIndex = i
+    max = product
     }
   }return maxIndex 
 } 

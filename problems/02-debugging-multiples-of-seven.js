@@ -8,8 +8,6 @@ highest. Unfortunately, the code is not working correctly. Help them fix it!
 function multiplesOfSeven(num) {
   let arr = [];
   let bug = [];
-  let sevens = [];
-  let fourteens = [];
   for(let i = 0; i <= num; i++){
     if(i === 0){
       bug.push(i)
